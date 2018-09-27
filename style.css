@@ -1,16 +1,23 @@
-body{
-    margin: 0px;
+/* Colores 
+barra #2a2a2a
+fondo #f1f4f6
+*/
+* {
+    box-sizing: border-box;
+    margin:0px;
     padding: 0px;
-    background-color: aquamarine;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
+:root {
+    font-size: calc(0.5em + 1vh); 
+}
+
+body {
+    background-color: #f1f4f6;
 }
 
 img {
-    visibility: hidden;
+    display: none;
 }
 
 .none-v {
@@ -20,26 +27,83 @@ img {
 }
 
 .container {
-    margin: 2em 10em;
+    margin: 2em 12em;
 }
 
 a {
     text-decoration: none;
 }
 /*BARA DE NAVEGACION*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+}
+.Empresa {
+    font-size: 2em;
+}
+.Juego {
+    padding: 0em 4em;
+    font-size: 0.8em;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+.in-head {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 1.5em;
+}
 
+.list-nav ul li{
+    display: inline;
+    padding: 0.5em;
+}
+
+.list-nav ul li a {
+    color: #e7e7e7;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.Connect {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #e7e7e7;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 0em 0em;
+    justify-content: center;
+    align-items: center;
+}
+.Connect ul li {
+    display: inline;
+    padding: 1.5em;
+    font-size: 1em;
+}
+.Connect div {
+    padding: 1.5em;
+    background-color:#f5f500;
+}
+.Connect div span {
+    color: #000000;
+}
 
 /*TOP*/
 .fondo-top {
     position: relative;
-    background-image: url(img/top.jpg);
+    background-image: url(img/new-top.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 40em;
 }
 .contetop {
     position: absolute;
-    bottom: 0;
+    bottom: 2em;
 }
 /*CONTENIDO*/
 .grid-content {
@@ -48,6 +112,7 @@ a {
 /*DOBLES*/
 .notice {
     display: grid;
+    grid-template-rows: 1fr;
     grid-template-columns: 50% 50%;
 }
 .notice article {
@@ -59,18 +124,23 @@ a {
 }
 .notice article a .conte {
     position: absolute;
-    bottom: 0px;
+    bottom: 2em;
 }
 /*CUATRO*/
 .notices {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-columns: 25% 25% 25% 25%;
 }
-
-.notices article a div.imagen-article {
+.notices .conte {
+    background-color: #ffffff;
+}
+.imagen-article {
     background-image: url(img/top.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 30em;
 }
-
+/*FOOTER*/
+footer {
+    background-color: #2a2a2a;
+}
