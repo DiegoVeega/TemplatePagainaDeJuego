@@ -2,6 +2,7 @@
 barra #2a2a2a
 fondo #f1f4f6
 */
+
 * {
     box-sizing: border-box;
     margin:0px;
@@ -100,6 +101,7 @@ header {
 .contetop {
     position: absolute;
     bottom: 2em;
+    padding: 2em;
 }
 /*CONTENIDO*/
 .grid-content {
@@ -107,6 +109,7 @@ header {
     margin: 3em 0em;
 }
 .grid-content h4 {
+    color: #00ccff;
     font-family: 'Roboto', sans-serif;
 }
 /*DOBLES*/
@@ -211,4 +214,68 @@ hr {
 
 .pegi li img {
     width: 9em;
+}
+
+/*-----------------------------------------------------------*/
+.grid-content .notice p {
+    color: #ffffff;
+    font-size: 3em;
+    font-family: 'Anton', sans-serif;
+}
+
+.grid-content .notices p {
+    color: #000000;
+    font-size: 1.5em;
+    font-family: 'Anton', sans-serif;
+}
+
+.fondo-top p {
+    font-size: 1.5em;
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+}
+
+.fondo-top h1 {
+    font-size: 3em;
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+}
+
+.imagen-article {
+    height: 20em;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 1200px){
+    .notice {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .notices {
+        display: block;
+    }
+    .notices .imagen-article {
+        height: 30em;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .container {
+        margin: 2em 8em;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .container {
+        margin: 2em 4em;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container {
+        margin: 0em 0em;
+    }
 }
